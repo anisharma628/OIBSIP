@@ -1,0 +1,287 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --navbar-height: 40px;
+}
+body{
+    background-color: antiquewhite;
+}
+/* navigation bar */
+#navbar{
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 71px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+   
+   
+    
+}
+/* navigation bar :logo and image*/
+.logo{
+    margin: 4px 7px;
+}
+.logo img{
+    margin: 3px 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    
+}
+/* navigation bar:list item */
+#navbar ul{
+    display: flex;
+  
+}
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font: 1.3rem;
+}
+#navbar ul.name li {
+    width: 309px;
+    display: inline;
+    top: -4px;
+    font-size: -5rem;
+    font-size: 49px;
+    margin: 5px 3px;
+    padding: 2px 3px;
+    font-family: 'Italianno', cursive;
+
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 11px;
+    margin: 2px 4px;
+    text-decoration: none;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+    font-size: 1.3rem;
+    color: white;
+    
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#navbar ul li a:active{
+    background-color: white;
+}
+
+/* home section */
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 392px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    
+}
+#home::before{
+    content: "";
+    background: url('../cupcake-g99aa97b18_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 480px;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.89;
+    
+
+}
+#home h1
+{
+    text-align: center;
+    margin: 10px 0px;
+    font-family: 'Italianno', cursive;
+    font-size: 65px;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+  margin: 15px 50px;
+  font-family: 'Times New Roman', Times, serif; 
+  font-weight: bold;
+}
+#home p.intro{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+  margin: -11px 50px;
+  font-family:'Parisienne', cursive; 
+  font-weight: bold; 
+}
+/* products section */
+#product{
+    margin: 0px 20px;
+    display: flex;
+}
+#product .box {
+    border: 2px solid black;
+    margin: 20px 25px;
+    padding: 10px 98px;
+    border-radius: 53px;
+    background-color: rgb(252, 250, 247);
+}
+#product .box img{
+    /* margin auto will work only when display is block and it is used to give center position to an element */
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+#product button{
+    display: block;
+    margin: 15px auto;
+    padding: 4px 10px;
+}
+#product .box button a {
+    text-decoration: none;
+    color: black;
+
+}
+#product .box button:hover {
+    background-color: honeydew;
+
+}
+#product .box p{
+    font-family: 'Andada Pro', serif; 
+    font-size: 16px;
+}
+/* about section started */
+#about-us p{
+    margin: 2px 30px;
+    padding: 12px 69px;
+    font-size: 18px;
+    font-weight: 800;
+
+    
+
+}
+/* #about-us::before{
+    content: "";
+    position: absolute;
+    background: url(../dessert-gb6daaf181_1920.jpg) no-repeat center/cover;
+    border-radius: 33px;
+    left: 2px;
+    right: 2px;
+    width: 100%;
+    height: 57%;
+    z-index: -1;
+    opacity: 0.6;
+} */
+/* visiting our insta */
+#instagram h1{
+    font-size: 32px;
+    margin: -10px 2px 45px 2px;
+    font-family: 'Italianno', cursive;
+}
+#instagram h1 a{
+    text-decoration: none;
+    
+
+}
+#instagram h1 a:hover{
+    color: green;
+
+}
+/* contact section starts here */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../pexels-silvia-trigo-1857157.jpg) center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+   
+}
+#contact-box label{
+    font-size: 18px;
+    font-weight: 800;
+   
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 13px;
+    font-size: 1.1rem;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 5px;
+}
+
+
+
+
+/* utility class */
+.h-primary{
+    font-size: 55px;
+    /* margin: 23px 0px; */
+    padding: 25px;
+    font-family: 'Italianno', cursive;
+    
+    
+}
+.center{
+    text-align: center;
+    /* margin: 19px 6px; */
+}
+.h-secondry{
+    font-size: 1.8rem;
+    font-family: 'Andada Pro', serif;
+    padding: 12px;
+    
+}
+.btn{
+    padding: 5px 12px;
+    margin: 12px;
+    border-radius: 16px;
+    width:155px;
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif ;
+    cursor: pointer;
+
+    }
+.btn:hover{
+      color:green ;
+}
